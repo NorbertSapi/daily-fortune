@@ -21,5 +21,7 @@ function showFortune(){
   button.style.cursor = 'default';
 
   //add your code here
- 
+  button.removeEventListener('click', showFortune);
 }
+
+button.addEventListener('click', showFortune);
